@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Drawing Pad Applet</title>
+    <style>
+      body {
+        background: linear-gradient(to right, #f9f9f9, #e0e0e0);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        background: white;
+        padding: 20px 30px;
+        border-radius: 12px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+      h1 {
+        color: #333;
+        margin-bottom: 10px;
+      }
+      p {
+        color: #555;
+        font-size: 15px;
+        margin-bottom: 20px;
+      }
+      applet {
+        border: 2px solid #333;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Java Drawing Pad</h1>
+      <p>Click and drag your mouse in the area below to draw.</p>
+      <applet code="DrawingPadApplet.class" width="500" height="400">
+        Your browser does not support Java Applets.
+      </applet>
+    </div>
+  </body>
+</html>
